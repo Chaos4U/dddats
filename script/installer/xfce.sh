@@ -1,11 +1,11 @@
 #!/bin/sh
 
 # xorg
-sudo xbps-install -Su
-sudo xbps-install -S xorg
+sudo xbps-install -Syu
+sudo xbps-install -Sy xorg
 
 # xfce
-sudo xbps-install -S xfce4
+sudo xbps-install -Sy xfce4
 
 # dm
 sudo xbps-install -Sy lightdm lightdm-gtk3-greeter
