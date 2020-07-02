@@ -1,10 +1,10 @@
 #!/bin/sh
 
 # base
+sudo xbps-install -Syu
 sudo xbps-install -Sy xorg
 
 # i3 install
-sudo xbps-install -Syu
 sudo xbps-install -Sy i3status dmenu nano sakura
 # i3 background
 sudo xbps-install -Sy feh
