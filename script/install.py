@@ -7,13 +7,13 @@ if(login == 0): # first login installing desktop
   print("Hello to install tool")
   wm = input("Which wm you want(i3,xfce,kde)?: ")
   if(wm == "i3"): # i3 DE
-    os.popen('sh ~/dddats/script/installer/i3.sh')
+    os.popen('sh ~/dddats/script/installer/i3.sh').read()
     login = 1
   if(wm == "xfce"): #xfce WM
-    os.popen('sh ~/dddats/script/installer/xfce.sh')
+    os.popen('sh ~/dddats/script/installer/xfce.sh').read()
     login = 1
   if(wm == "kde"): #kde WM
-    os.popen('sh ~/dddats/script/installer/kde.sh')
+    os.popen('sh ~/dddats/script/installer/kde.sh').read()
     login = 1
 while(login == 1):
     todo = input("What you wanna do? (drivers,sysupd,pkginstall): ")
