@@ -1,4 +1,4 @@
-#!/bin/sh
+import os
 
 # base
 sudo xbps-install -Syu
