@@ -65,6 +65,8 @@ def apper():
 def cpu():
     wha = input("Which cpu you using. (amd, intel): ")
     if (wha == 'amd'):
+        os.system('sudo xbps-install -Sy void-repo-nonfree')
         os.system('sudo xbps-install -Sy linux-firmware-amd')
     if (wha == 'intel'):
+        os.system('sudo xbps-install -Sy void-repo-nonfree')
         os.system('sudo xbps-install -Sy intel-ucode')
