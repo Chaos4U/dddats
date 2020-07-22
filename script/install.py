@@ -11,7 +11,7 @@ if(login == 0): # first login installing desktop
   print("Hello to install tool")
   wm = input("Which wm you want(i3,xfce,kde)?: ")
   if(wm == "i3"): # i3 DE
-    #os.popen('sh ~/dddats/script/installer/i3.sh').read()
+    os.popen('sh ~/dddats/script/installer/i3.sh').read()
     save()
   if(wm == "xfce"): #xfce WM
     os.popen('sh ~/dddats/script/installer/xfce.sh').read()
