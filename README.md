@@ -3,7 +3,7 @@
 # This is an "Program" that allows to easy install Void Linux
 
 # Little guide how to use
-Firstly you need to type. Sudo xbps-install -S . to install xbps. 
+Firstly you need to type. Sudo xbps-install -Su . to install xbps. or do next step but 2times
 Then sudo xbps-install -S git 
 And now git clone https://github.com/Chaos4U/dddats/ 
 cd dddats/ 
