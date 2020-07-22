@@ -13,10 +13,10 @@ if(login == 0): # first login installing desktop
   if(wm == "i3"): # i3 DE
     os.popen('sh ~/dddats/script/installer/i3.sh').read()
     save()
-  if(wm == "xfce"): #xfce WM
+  elif(wm == "xfce"): #xfce WM
     os.popen('sh ~/dddats/script/installer/xfce.sh').read()
     save()
-  if(wm == "kde"): #kde WM
+  elif(wm == "kde"): #kde WM
     os.popen('sh ~/dddats/script/installer/kde.sh').read()
     save()
 while(login == 1):
@@ -33,13 +33,13 @@ while(login == 1):
            from installer.some import intel
            intel()
            continue
-    if (todo == "sysupd"):
+    elif (todo == "sysupd"):
         sure = input("(yes,no)?: ")
         if (sure == 'yes'):
             os.system('sudo xbps-install -Syu')
         else:
             continue
-    if (todo == "pkginstall"):
+    elif (todo == "pkginstall"):
         from installer.some import apper
         apper()
         continue
