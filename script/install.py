@@ -1,6 +1,6 @@
 import os
 import json
-with open('l.json', 'r') as lg:
+with open('script/l.json', 'r') as lg:
   login = json.load(lg)
   print()
 
