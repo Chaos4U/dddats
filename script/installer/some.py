@@ -1,6 +1,5 @@
-login = 0
-
 import os
+import json
 
 def nvidia():
     need = input("You really want to install nvidia drivers?(yes,no): ")
@@ -70,3 +69,7 @@ def cpu():
     if (wha == 'intel'):
         os.system('sudo xbps-install -Sy void-repo-nonfree')
         os.system('sudo xbps-install -Sy intel-ucode')
+def save():
+    l = 1
+    with open('./l.json', 'w') as lg:
+        json.dump(l, lg)
