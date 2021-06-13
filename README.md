@@ -1,6 +1,6 @@
-# dddats
+# Void Linux Installer
 
-# This is an Script that allows to easy install Void Linux
+# This is a Script that allows to easy install Void Linux
 
 # Little guide how to use
 Firstly you need to type. Sudo xbps-install -Su . to install xbps. or do next step but 2times
